@@ -105,7 +105,8 @@ h1, h2, h3, .marchio__nome, .piede__insegna, .cartellino__nome { overflow-wrap: 
 .apertura__firma { position: relative; display: grid; justify-items: center; align-content: center; }
 .tavolo { width: 100%; max-width: 470px; margin: 0; -webkit-user-select: none; user-select: none; }
 .tavolo .sacchetto__svg { filter: drop-shadow(0 18px 26px rgba(59, 42, 31, .35)); }
-.tavolo__didascalia { min-height: 3em; margin: 14px 0 0; font-size: 1rem; line-height: 1.45; text-align: center; }
+/* la didascalia della firma è una figcaption: senza il suo colore prenderebbe il grigio delle foto, debole sul legno (2,9:1) */
+.tavolo__didascalia { min-height: 3em; margin: 14px 0 0; font-size: 1rem; line-height: 1.45; color: var(--inchiostro); text-align: center; }
 .tavolo__d { display: none; }
 .tavolo[data-modo="0"] .tavolo__d[data-m="0"], .tavolo[data-modo="1"] .tavolo__d[data-m="1"], .tavolo[data-modo="2"] .tavolo__d[data-m="2"] { display: inline; }
 .tavolo__modi { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 12px; }
