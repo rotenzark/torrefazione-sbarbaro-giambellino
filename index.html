@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte sul banco c'è il sacchetto aperto e vuoto; se il codice non arriva, dopo 2,5 s è finita (stato finale) */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaSacchetto=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,64 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Niconne&amp;family=Sumana:wght@400;700&amp;family=Xanh+Mono&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=2">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Torrefazione Bar e Caramelle Sbarbaro e Visigalli","alternateName":"Torrefazione Sbarbaro","description":"Torrefazione, bar e caramelle in Via Giambellino 5 a Milano: miscele di caffè in grani o macinate per la moka, caramelle sfuse, confezioni col nastro dorato, colazione al banco.","url":"https://rotenzark.github.io/torrefazione-sbarbaro-giambellino/","image":"https://rotenzark.github.io/torrefazione-sbarbaro-giambellino/img/og.jpg","telephone":"+39 329 565 9174","servesCuisine":["Caffè"],"address":{"@type":"PostalAddress","streetAddress":"Via Giambellino 5","postalCode":"20146","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.45183,"longitude":9.15279},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"06:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"15:15","closes":"19:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"32","bestRating":"5"}}
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Torrefazione Bar e Caramelle Sbarbaro e Visigalli",
+  "alternateName": "Torrefazione Sbarbaro",
+  "description": "Torrefazione, bar e caramelle in Via Giambellino 5 a Milano: miscele di caffè in grani o macinate per la moka, caramelle sfuse, confezioni col nastro dorato, colazione al banco.",
+  "url": "https://rotenzark.github.io/torrefazione-sbarbaro-giambellino/",
+  "image": "https://rotenzark.github.io/torrefazione-sbarbaro-giambellino/img/og.jpg",
+  "telephone": "+39 329 565 9174",
+  "servesCuisine": [
+    "Caffè"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Giambellino 5",
+    "postalCode": "20146",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.45183,
+    "longitude": 9.15279
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "06:30",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "07:00",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "15:15",
+      "closes": "19:00"
+    }
+  ]
+}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -89,7 +139,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
           <path class="insegna__solchi" d="M4 13 Q10 9 16 12 M26 13 Q32 9 38 12 M48 13 Q54 9 60 12 M70 13 Q76 9 82 12 M92 13 Q98 9 104 12 M114 13 Q120 9 126 12 M136 13 Q142 9 148 12 M158 13 Q164 9 170 12"/></svg><span data-i18n="h.t2">di caffè</span><svg class="insegna__tazza" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><path d="M14 30 H46 V36 Q46 48 30 48 Q14 48 14 36 Z M46 32 Q56 32 54 40 Q52 45 45 43 M6 51 H56 M24 6 Q20 12 25 17 Q30 22 26 27 M34 4 Q30 11 35 16 Q40 21 36 27"/></svg></span></h1>
       </div>
       <p class="apertura__frase" data-i18n="h.testo">All&#39;inizio di Via Giambellino, a due passi da Piazza Napoli e dal tram 14: il caffè nei silos di vetro, in grani o macinato per la moka, le caramelle sfuse nei vasi, la colazione al banco dalle sei e mezza.</p>
-      <p class="apertura__citazione"><span>«È questo per me il bar del Giambellino.»</span> <span class="apertura__chi" data-i18n="h.chi">Giulia Ubaldi, su Scatti di Gusto (2017)</span></p>
+      <p class="apertura__citazione"><span lang="it">«È questo per me il bar del Giambellino.»</span> <span class="apertura__chi" data-i18n="h.chi">Giulia Ubaldi, su Scatti di Gusto (2017)</span></p>
       <div class="voti">
         <p class="voto"><b class="voto__n">4,8</b> <span class="voto__su" data-i18n="h.google">su Google, 32 recensioni</span></p>
       </div>
@@ -245,12 +295,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="voto"><b class="voto__n">4,8</b> <span class="voto__su" data-i18n="d.google">su Google, 32 recensioni</span></p>
     </div>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__testo">«È un accogliente e caratteristico negozio-bar-torrefazione di una volta: ci si lascia alle spalle il caotico traffico della piazza, i clacson impazienti, le interminabili attese del tram 14 e ci si trova in una rara" bolla" di cortesia, ti riconoscono, ti salutano e il caffè ha il profumo dell&#39;ospitalità...poi ci sono i dolci, le caramelle, i cioccolatini delle migliori marche»</p><p class="recensione__chi"><b>Carlotta Collevati</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Uno dei pochi veri bar rimasti a Giambellino. I proprietari, padre e figlio, sono gentilissimi (sul serio, non per finta) e professionali, caffè davvero buono, come pochi a Milano; all&#39;occorrenza si possono acquistare diverse varianti di caffé da macinare per la moka ed anche preparandolo a casa non perde la qualità.»</p><p class="recensione__chi"><b>Stefano Solaro</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Un gioiellino. L&#39;aroma di caffè ti accoglie fin dalla porta, con tutto il fascino di una bottega storica.»</p><p class="recensione__chi"><b>Michelangela Barba</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Vecchio bar milanese dove ho bevuto la migliore cioccolata calda della città!»</p><p class="recensione__chi"><b>Federica Bianchi</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Baristi di una gentilezza incredibile. Anche l’atmosfera del bar è accogliente e piacevole. Potete trovare inoltre tantissime caramelle.»</p><p class="recensione__chi"><b>Ononto Bahadur</b> <span data-i18n="d.g11m">Google, 11 mesi fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Accoglienza e cordialità. Bello fare colazione o prendere un bicchiere a fine giornata, ci si sente a casa, tra amici»</p><p class="recensione__chi"><b>Cristina</b> <span data-i18n="d.g3s">Google, 3 settimane fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«È un accogliente e caratteristico negozio-bar-torrefazione di una volta: ci si lascia alle spalle il caotico traffico della piazza, i clacson impazienti, le interminabili attese del tram 14 e ci si trova in una rara" bolla" di cortesia, ti riconoscono, ti salutano e il caffè ha il profumo dell&#39;ospitalità...poi ci sono i dolci, le caramelle, i cioccolatini delle migliori marche»</p><p class="recensione__chi"><b>Carlotta Collevati</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Uno dei pochi veri bar rimasti a Giambellino. I proprietari, padre e figlio, sono gentilissimi (sul serio, non per finta) e professionali, caffè davvero buono, come pochi a Milano; all&#39;occorrenza si possono acquistare diverse varianti di caffé da macinare per la moka ed anche preparandolo a casa non perde la qualità.»</p><p class="recensione__chi"><b>Stefano Solaro</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Un gioiellino. L&#39;aroma di caffè ti accoglie fin dalla porta, con tutto il fascino di una bottega storica.»</p><p class="recensione__chi"><b>Michelangela Barba</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Vecchio bar milanese dove ho bevuto la migliore cioccolata calda della città!»</p><p class="recensione__chi"><b>Federica Bianchi</b> <span data-i18n="d.g1a">Google, un anno fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Baristi di una gentilezza incredibile. Anche l’atmosfera del bar è accogliente e piacevole. Potete trovare inoltre tantissime caramelle.»</p><p class="recensione__chi"><b>Ononto Bahadur</b> <span data-i18n="d.g11m">Google, 11 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Accoglienza e cordialità. Bello fare colazione o prendere un bicchiere a fine giornata, ci si sente a casa, tra amici»</p><p class="recensione__chi"><b>Cristina</b> <span data-i18n="d.g3s">Google, 3 settimane fa</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte. La frase in alto viene da Scatti di Gusto, «Guida agli 11 indirizzi imperdibili al Giambellino» (2017).</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=Torrefazione+Bar+e+Caramelle+Sbarbaro+e+Visigalli%2C+Via+Giambellino+5%2C+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -271,7 +321,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     </ul>
     <div class="dove">
       <div class="cartina reveal">
-        <iframe title="Mappa: Torrefazione Sbarbaro e Visigalli, Via Giambellino 5, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=Torrefazione%20Bar%20e%20Caramelle%20Sbarbaro%20e%20Visigalli%2C%20Via%20Giambellino%205%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Torrefazione Sbarbaro e Visigalli, Via Giambellino 5, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=Torrefazione%20Bar%20e%20Caramelle%20Sbarbaro%20e%20Visigalli%2C%20Via%20Giambellino%205%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Torrefazione+Sbarbaro+e+Visigalli%2C+Via+Giambellino+5%2C+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
       <div class="dove__testo">
         <dl class="indirizzo">
@@ -307,7 +357,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__sotto" data-i18n="f2.sotto">Torrefazione · bar · caramelle</p>
     <p class="piede__dove">Via Giambellino 5, 20146 Milano · <a href="tel:+393295659174" class="intero">329 565 9174</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Dal lunedì al venerdì 6:30–19 · sabato 7–13 e 15:15–19 · domenica chiuso</p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · le foto sono della bottega, dalla loro scheda Google e dal loro Instagram (una di un cliente); orari e recensioni da Google (settembre 2026). Il sacchetto e le caramelle li abbiamo disegnati noi.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · le foto sono della bottega, dalla loro scheda Google e dal loro Instagram (una di un cliente); orari e recensioni da Google (settembre 2026). Il sacchetto e le caramelle li abbiamo disegnati noi.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -322,5 +372,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
